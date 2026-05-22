@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    Shalini Regent Legal Chambers
+  </title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="overlay">
+
+      <h1>
+        Shalini Regent Legal Chambers
+      </h1>
+
+      <p>
+        Professional Legal Consultation & Judicial Representation
+      </p>
+
+      <a href="#contact">
+        Book Consultation
+      </a>
+
+    </div>
+
+  </header>
+
+  <section class="services">
+
+    <h2>
+      Practice Areas
+    </h2>
+
+    <div class="service-box">
+
+      <div class="card">
+        Divorce & Matrimonial Matters
+      </div>
+
+      <div class="card">
+        Child Custody & Maintenance
+      </div>
+
+      <div class="card">
+        Domestic Violence Matters
+      </div>
+
+      <div class="card">
+        Civil Litigation
+      </div>
+
+      <div class="card">
+        Property & Consumer Disputes
+      </div>
+
+      <div class="card">
+        Legal Consultation
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about">
+
+    <h2>
+      About Chambers
+    </h2>
+
+    <p>
+      Shalini Regent Legal Chambers provides professional legal services in family law, civil litigation, and judicial matters with a client-focused and ethical approach.
+    </p>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>
+      Contact Us
+    </h2>
+
+    <p>
+      Bhopal, Madhya Pradesh
+    </p>
+
+    <a href="https://wa.me/917722037380">
+      WhatsApp Consultation
+    </a>
+
+  </section>
+
+  <footer>
+
+    © 2026 Shalini Regent Legal Chambers
+
+  </footer>
+
+</body>
+
+</html>

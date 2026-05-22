@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  background:#f4f4f4;
+  color:#222;
+}
+
+header{
+  height:100vh;
+  background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+  position:relative;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.6);
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:white;
+  padding:20px;
+}
+
+.overlay h1{
+  font-size:55px;
+  margin-bottom:20px;
+}
+
+.overlay p{
+  font-size:20px;
+  margin-bottom:30px;
+}
+
+.overlay a{
+  background:#d4af37;
+  color:black;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+.services{
+  padding:80px 20px;
+  text-align:center;
+  background:white;
+}
+
+.services h2{
+  font-size:40px;
+  margin-bottom:40px;
+}
+
+.service-box{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.card{
+  background:#08142c;
+  color:white;
+  width:280px;
+  padding:30px;
+  border-radius:12px;
+  font-size:18px;
+}
+
+.about{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.about h2{
+  font-size:40px;
+  margin-bottom:30px;
+}
+
+.about p{
+  max-width:800px;
+  margin:auto;
+  font-size:20px;
+  line-height:1.8;
+}
+
+.contact{
+  background:#08142c;
+  color:white;
+  text-align:center;
+  padding:80px 20px;
+}
+
+.contact h2{
+  font-size:40px;
+  margin-bottom:20px;
+}
+
+.contact a{
+  display:inline-block;
+  margin-top:30px;
+  background:#d4af37;
+  color:black;
+  padding:15px 30px;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:black;
+  color:white;
+}
+
+@media(max-width:768px){
+
+  .overlay h1{
+    font-size:36px;
+  }
+
+  .overlay p{
+    font-size:18px;
+  }
+
+}
