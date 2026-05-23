@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shalini Regent Legal Chambers</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,21 +21,11 @@
     scroll-behavior:smooth;
 }
 
-:root{
-    --primary:#08162f;
-    --secondary:#10264b;
-    --gold:#d4af37;
-    --light:#f5f7fb;
-    --text:#24364f;
-    --white:#ffffff;
-    --border:#e5e7eb;
-}
-
 body{
     font-family:'Inter',sans-serif;
-    color:var(--text);
-    background:#fff;
+    color:#24364f;
     line-height:1.7;
+    background:#fff;
 }
 
 h1,h2,h3,h4{
@@ -46,6 +38,10 @@ h1,h2,h3,h4{
     margin:auto;
 }
 
+section{
+    padding:100px 0;
+}
+
 /* NAVBAR */
 
 nav{
@@ -53,7 +49,7 @@ nav{
     position:sticky;
     top:0;
     z-index:1000;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .nav-wrapper{
@@ -72,41 +68,33 @@ nav{
 .logo-icon{
     width:55px;
     height:55px;
-    background:var(--primary);
+    background:#08162f;
     color:#fff;
-    border-radius:12px;
     display:flex;
     align-items:center;
     justify-content:center;
+    border-radius:12px;
     font-size:28px;
 }
 
 .logo-text h2{
-    font-size:32px;
+    font-size:30px;
 }
 
 .logo-text p{
     color:#666;
-    font-size:14px;
 }
 
 .nav-links{
-    display:flex;
     list-style:none;
+    display:flex;
     gap:30px;
 }
 
 .nav-links a{
     text-decoration:none;
-    color:var(--text);
+    color:#24364f;
     font-weight:600;
-}
-
-.nav-btn{
-    background:var(--primary);
-    color:#fff !important;
-    padding:12px 24px;
-    border-radius:8px;
 }
 
 /* HERO */
@@ -119,131 +107,63 @@ nav{
     background-size:cover;
     background-position:center;
 
-    color:#fff;
     min-height:100vh;
 
     display:flex;
     align-items:center;
+
+    color:white;
 }
 
 .hero-content{
     max-width:850px;
 }
 
-.hero-tag{
-    display:inline-block;
-    padding:10px 20px;
-    border-radius:50px;
-    background:rgba(255,255,255,0.15);
-    margin-bottom:25px;
-}
-
 .hero h1{
-    font-size:80px;
+    font-size:78px;
     line-height:1.1;
     margin-bottom:20px;
-    color:#fff;
 }
 
 .hero h3{
     font-size:34px;
     margin-bottom:20px;
-    color:#e2e8f0;
 }
 
 .hero p{
     font-size:20px;
-    margin-bottom:40px;
-}
-
-.hero-buttons{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+    margin-bottom:35px;
 }
 
 .btn{
-    padding:16px 34px;
+    display:inline-block;
+    padding:16px 35px;
     border-radius:10px;
     text-decoration:none;
     font-weight:600;
-    display:inline-block;
 }
 
 .btn-primary{
     background:#fff;
-    color:var(--primary);
+    color:#08162f;
 }
 
-.btn-outline{
-    border:1px solid rgba(255,255,255,0.5);
-    color:#fff;
-}
-
-/* SECTION */
-
-section{
-    padding:100px 0;
-}
+/* SECTION HEADINGS */
 
 .section-header{
     text-align:center;
     max-width:850px;
     margin:auto;
-    margin-bottom:70px;
+    margin-bottom:60px;
 }
 
 .section-header h2{
     font-size:62px;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .section-header p{
     font-size:20px;
-    color:#475569;
-}
-
-/* ABOUT */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
-}
-
-.about-card{
-    background:#fff;
-    padding:40px;
-    border-radius:20px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
-}
-
-.about-card h3{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.about-card p{
-    margin-bottom:20px;
-}
-
-.stats-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:25px;
-}
-
-.stat-box{
-    background:var(--light);
-    padding:35px;
-    border-radius:18px;
-    text-align:center;
-}
-
-.stat-box h3{
-    font-size:50px;
-    color:var(--primary);
 }
 
 /* SERVICES */
@@ -260,9 +180,9 @@ section{
 
 .service-card{
     background:#fff;
-    padding:35px;
-    border-radius:20px;
     border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:35px;
     transition:0.3s;
 }
 
@@ -273,31 +193,37 @@ section{
 .service-icon{
     width:70px;
     height:70px;
-    background:var(--primary);
+    background:#08162f;
     color:#fff;
-    border-radius:16px;
     display:flex;
     align-items:center;
     justify-content:center;
+    border-radius:16px;
     font-size:30px;
     margin-bottom:25px;
 }
 
 .service-card h3{
-    font-size:36px;
+    font-size:38px;
     margin-bottom:15px;
 }
 
 /* ADVOCATE */
 
+.advocate-section{
+    background:#fff;
+}
+
 .advocate-grid{
     display:grid;
     grid-template-columns:1.1fr 0.9fr;
     gap:60px;
+    align-items:center;
 }
 
 .advocate-content h2{
-    font-size:60px;
+    font-size:70px;
+    margin-bottom:20px;
 }
 
 .advocate-content h3{
@@ -305,88 +231,67 @@ section{
     margin-bottom:20px;
 }
 
+.advocate-content p{
+    margin-bottom:25px;
+    font-size:18px;
+}
+
 .quote-box{
-    background:var(--primary);
+    background:#08162f;
     color:#fff;
-    padding:40px;
-    border-radius:20px;
-    margin-top:35px;
+    padding:35px;
+    border-radius:18px;
+    margin-top:30px;
+    font-style:italic;
 }
 
 .quote-box span{
     display:block;
     margin-top:15px;
+    font-style:normal;
 }
 
-.expertise-panel{
-    background:#f8fafc;
-    padding:40px;
-    border-radius:22px;
+.advocate-image img{
+    width:100%;
+    border-radius:24px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    object-fit:cover;
 }
 
-.expertise-panel h3{
-    font-size:48px;
+/* EXPERTISE */
+
+.expertise{
+    margin-top:60px;
+}
+
+.expertise h3{
+    font-size:50px;
     margin-bottom:30px;
 }
 
 .expertise-grid{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
-.expertise-item{
+.expertise-card{
     background:#fff;
-    padding:20px;
-    border-radius:14px;
     border:1px solid #e5e7eb;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
-/* PRACTICE AREA */
-
-.practice-area{
-    background:#fafafa;
+.expertise-card h4{
+    margin-top:15px;
+    font-size:30px;
 }
 
-.practice-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
-
-.practice-card{
-    background:#fff;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
-}
-
-.practice-card h3{
-    font-size:40px;
-    margin-bottom:20px;
-}
-
-.practice-card ul{
-    list-style:none;
-}
-
-.practice-card li{
-    margin-bottom:14px;
-    padding-left:28px;
-    position:relative;
-}
-
-.practice-card li::before{
-    content:'✔';
-    position:absolute;
-    left:0;
-    color:var(--gold);
-}
-
-/* WHY CHOOSE US */
+/* WHY US */
 
 .why-us{
-    background:linear-gradient(to right,#061225,#0a1f3d);
+    background:#08162f;
     color:#fff;
 }
 
@@ -403,44 +308,23 @@ section{
 
 .why-item{
     display:flex;
-    gap:18px;
+    gap:15px;
     font-size:20px;
 }
 
 .why-icon{
-    min-width:42px;
-    height:42px;
+    width:40px;
+    height:40px;
     border-radius:50%;
-    border:2px solid rgba(255,255,255,0.8);
+    border:2px solid #fff;
     display:flex;
     align-items:center;
     justify-content:center;
 }
 
-/* TESTIMONIALS */
-
-.testimonials-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
-
-.testimonial-card{
-    background:#fff;
-    padding:35px;
-    border-radius:20px;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
-}
-
-.stars{
-    color:var(--gold);
-    font-size:22px;
-    margin-bottom:20px;
-}
-
 /* CONTACT */
 
-.contact-section{
+.contact{
     background:#f8fafc;
 }
 
@@ -454,31 +338,31 @@ section{
 .form-card{
     background:#fff;
     padding:45px;
-    border-radius:24px;
+    border-radius:22px;
     box-shadow:0 8px 30px rgba(0,0,0,0.08);
 }
 
 .contact-card h3,
 .form-card h3{
-    font-size:48px;
-    margin-bottom:30px;
+    font-size:50px;
+    margin-bottom:35px;
 }
 
 .contact-item{
     display:flex;
     gap:20px;
-    margin-bottom:35px;
+    margin-bottom:30px;
 }
 
 .contact-icon{
     width:60px;
     height:60px;
     background:#f3f4f6;
-    border-radius:16px;
+    border-radius:14px;
     display:flex;
     align-items:center;
     justify-content:center;
-    font-size:26px;
+    font-size:28px;
 }
 
 .input-group{
@@ -487,7 +371,7 @@ section{
 
 .input-group label{
     display:block;
-    margin-bottom:10px;
+    margin-bottom:8px;
     font-weight:600;
 }
 
@@ -506,35 +390,14 @@ section{
 }
 
 .submit-btn{
-    background:var(--primary);
-    color:#fff;
-    border:none;
     width:100%;
     padding:18px;
+    border:none;
+    background:#08162f;
+    color:#fff;
     border-radius:14px;
     font-size:18px;
     cursor:pointer;
-}
-
-/* CTA */
-
-.cta{
-    background:linear-gradient(to right,#08162f,#0f274c);
-    color:#fff;
-    text-align:center;
-}
-
-.cta h2{
-    font-size:68px;
-    margin-bottom:20px;
-    color:#fff;
-}
-
-.cta p{
-    max-width:800px;
-    margin:auto;
-    margin-bottom:35px;
-    font-size:20px;
 }
 
 /* FOOTER */
@@ -542,54 +405,29 @@ section{
 footer{
     background:#061225;
     color:#fff;
-    padding:70px 0 30px;
-}
-
-.footer-top{
-    display:flex;
-    justify-content:space-between;
-    gap:40px;
-    padding-bottom:35px;
-    border-bottom:1px solid rgba(255,255,255,0.1);
-}
-
-.footer-brand{
-    display:flex;
-    gap:18px;
-}
-
-.footer-brand h3{
-    color:#fff;
-    font-size:40px;
-}
-
-.footer-right{
-    text-align:right;
-}
-
-.disclaimer{
-    margin-top:30px;
     text-align:center;
-    color:#cbd5e1;
-    font-size:14px;
+    padding:35px;
 }
 
 /* RESPONSIVE */
 
-@media(max-width:1024px){
+@media(max-width:992px){
 
-    .about-grid,
     .advocate-grid,
     .contact-grid{
         grid-template-columns:1fr;
     }
 
     .hero h1{
-        font-size:58px;
+        font-size:55px;
     }
 
     .section-header h2{
         font-size:48px;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
     }
 }
 
@@ -617,23 +455,10 @@ footer{
     .hero h3{
         font-size:24px;
     }
-
-    .why-grid,
-    .expertise-grid,
-    .stats-grid{
-        grid-template-columns:1fr;
-    }
-
-    .footer-top{
-        flex-direction:column;
-    }
-
-    .footer-right{
-        text-align:left;
-    }
 }
 
 </style>
+
 </head>
 
 <body>
@@ -658,11 +483,9 @@ footer{
 <ul class="nav-links">
 
 <li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
 <li><a href="#services">Services</a></li>
-<li><a href="#practice">Practice Areas</a></li>
+<li><a href="#advocate">Advocate</a></li>
 <li><a href="#contact">Contact</a></li>
-<li><a href="#contact" class="nav-btn">Consult Now</a></li>
 
 </ul>
 
@@ -678,99 +501,21 @@ footer{
 
 <div class="hero-content">
 
-<div class="hero-tag">
-Trusted Legal Guidance in Bhopal & Madhya Pradesh
-</div>
-
-<h1>Professional Legal Services With Integrity & Excellence</h1>
+<h1>
+Professional Legal Services With Integrity & Excellence
+</h1>
 
 <h3>
-Expert consultation, litigation support, judicial representation & dispute resolution.
+Expert consultation, litigation support & judicial representation.
 </h3>
 
 <p>
-Shalini Regent Legal Chambers delivers professional legal services with transparency,
-confidentiality, and a client-first approach tailored to every legal matter.
+Trusted legal solutions in Bhopal with a client-focused and transparent approach.
 </p>
-
-<div class="hero-buttons">
 
 <a href="#contact" class="btn btn-primary">
 Schedule Consultation
 </a>
-
-<a href="#practice" class="btn btn-outline">
-Explore Practice Areas
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section id="about">
-
-<div class="container">
-
-<div class="section-header">
-
-<h2>About Our Practice</h2>
-
-<p>
-Shalini Regent Legal Chambers is committed to delivering trusted legal solutions,
-client-focused advocacy, and professional excellence across diverse legal matters.
-</p>
-
-</div>
-
-<div class="about-grid">
-
-<div class="about-card">
-
-<h3>Trusted Legal Representation</h3>
-
-<p>
-Based in Bhopal, Madhya Pradesh, our chamber provides comprehensive legal
-consultation, litigation support, legal documentation, judicial representation,
-and mediation services.
-</p>
-
-<p>
-We combine practical legal strategy with compassionate client support to ensure
-clarity, confidence, and effective representation throughout every stage of the
-legal process.
-</p>
-
-</div>
-
-<div class="stats-grid">
-
-<div class="stat-box">
-<h3>18+</h3>
-<p>Years of Experience</p>
-</div>
-
-<div class="stat-box">
-<h3>500+</h3>
-<p>Consultations</p>
-</div>
-
-<div class="stat-box">
-<h3>100%</h3>
-<p>Confidentiality</p>
-</div>
-
-<div class="stat-box">
-<h3>24/7</h3>
-<p>Client Support</p>
-</div>
-
-</div>
 
 </div>
 
@@ -789,8 +534,7 @@ legal process.
 <h2>Our Services</h2>
 
 <p>
-Comprehensive legal services designed to meet your needs with professionalism,
-dedication, and commitment to the best possible outcomes.
+Comprehensive legal services designed to protect your rights and interests.
 </p>
 
 </div>
@@ -800,49 +544,111 @@ dedication, and commitment to the best possible outcomes.
 <div class="service-card">
 <div class="service-icon">💬</div>
 <h3>Legal Consultation</h3>
-<p>
-Professional legal guidance tailored to your legal matters.
-</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">💼</div>
-<h3>Litigation Support</h3>
-<p>
-Complete support throughout the litigation process.
-</p>
+<p>Professional guidance on legal matters with practical solutions.</p>
 </div>
 
 <div class="service-card">
 <div class="service-icon">⚖</div>
-<h3>Judicial Representation</h3>
-<p>
-Dedicated representation before courts and authorities.
-</p>
+<h3>Litigation Support</h3>
+<p>Comprehensive litigation support from filing to resolution.</p>
 </div>
 
 <div class="service-card">
 <div class="service-icon">📄</div>
 <h3>Legal Documentation</h3>
-<p>
-Drafting and review of contracts, notices and petitions.
-</p>
-</div>
-
-<div class="service-card">
-<div class="service-icon">📋</div>
-<h3>Case Analysis</h3>
-<p>
-Thorough analysis of legal matters with strategic planning.
-</p>
+<p>Drafting and review of contracts, notices, and legal papers.</p>
 </div>
 
 <div class="service-card">
 <div class="service-icon">👥</div>
 <h3>Mediation Support</h3>
+<p>Alternative dispute resolution with strategic legal guidance.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ADVOCATE SECTION -->
+
+<section class="advocate-section" id="advocate">
+
+<div class="container">
+
+<div class="advocate-grid">
+
+<div class="advocate-content">
+
+<h2>Meet Our Advocate</h2>
+
+<h3>Advocate Shalini Singh Parmar</h3>
+
 <p>
-Alternative dispute resolution and mediation guidance.
+Shalini Regent Legal Chambers is led by <strong>Advocate Shalini Singh Parmar</strong>,
+a seasoned legal professional with <strong>18 years of experience</strong> in the legal field.
+Her extensive expertise and dedication to client service form the foundation of our practice.
 </p>
+
+<p>
+With 18 years of experience navigating complex legal matters, Advocate Parmar brings
+a wealth of knowledge and practical insights to every case. Her commitment to professional
+excellence and ethical practice has earned the trust of numerous clients throughout
+Bhopal and Madhya Pradesh.
+</p>
+
+<div class="quote-box">
+
+"Legal practice is not just about winning cases; it's about understanding people,
+providing clarity in complex situations, and guiding clients with integrity and compassion."
+
+<span>— Advocate Shalini Singh Parmar</span>
+
+</div>
+
+</div>
+
+<div class="advocate-image">
+
+<img src="Advocate.jpg" alt="Advocate Shalini Singh Parmar">
+
+</div>
+
+</div>
+
+<!-- EXPERTISE -->
+
+<div class="expertise">
+
+<h3>Areas of Expertise</h3>
+
+<div class="expertise-grid">
+
+<div class="expertise-card">
+<h4>Legal Research</h4>
+</div>
+
+<div class="expertise-card">
+<h4>Dispute Resolution</h4>
+</div>
+
+<div class="expertise-card">
+<h4>Litigation</h4>
+</div>
+
+<div class="expertise-card">
+<h4>Legal Writing</h4>
+</div>
+
+<div class="expertise-card">
+<h4>Legal Advice</h4>
+</div>
+
+<div class="expertise-card">
+<h4>Contracts</h4>
+</div>
+
 </div>
 
 </div>
@@ -886,16 +692,6 @@ Our commitment to excellence and client satisfaction sets us apart.
 
 <div class="why-item">
 <div class="why-icon">✓</div>
-<p>Practical solutions to complex legal issues</p>
-</div>
-
-<div class="why-item">
-<div class="why-icon">✓</div>
-<p>Strong commitment to confidentiality and ethics</p>
-</div>
-
-<div class="why-item">
-<div class="why-icon">✓</div>
 <p>Dedicated representation before courts and authorities</p>
 </div>
 
@@ -907,7 +703,7 @@ Our commitment to excellence and client satisfaction sets us apart.
 
 <!-- CONTACT -->
 
-<section class="contact-section" id="contact">
+<section class="contact" id="contact">
 
 <div class="container">
 
@@ -916,12 +712,14 @@ Our commitment to excellence and client satisfaction sets us apart.
 <h2>Contact Us</h2>
 
 <p>
-Get in touch for a consultation. We are here to help.
+Get in touch for professional legal consultation.
 </p>
 
 </div>
 
 <div class="contact-grid">
+
+<!-- LEFT -->
 
 <div class="contact-card">
 
@@ -966,7 +764,20 @@ Madhya Pradesh 462027
 
 </div>
 
+<div class="contact-item">
+
+<div class="contact-icon">🕒</div>
+
+<div>
+<h4>Office Hours</h4>
+<p>10:30 AM to 7:00 PM</p>
 </div>
+
+</div>
+
+</div>
+
+<!-- RIGHT -->
 
 <div class="form-card">
 
@@ -976,15 +787,16 @@ Madhya Pradesh 462027
 
 <div class="input-group">
 <label>Full Name</label>
-<input type="text" id="name" required>
+<input type="text" id="name">
 </div>
 
 <div class="input-group">
-<label>Phone Number</label>
-<input type="tel" id="phone" required>
+<label>Phone Number *</label>
+<input type="tel" id="phone" required placeholder="Enter phone number">
 </div>
 
 <div class="input-group">
+
 <label>Legal Matter</label>
 
 <select id="matter">
@@ -999,6 +811,7 @@ Madhya Pradesh 462027
 </div>
 
 <div class="input-group">
+
 <label>Brief Description</label>
 
 <textarea id="description"></textarea>
@@ -1006,7 +819,7 @@ Madhya Pradesh 462027
 </div>
 
 <button type="submit" class="submit-btn">
-Request Consultation via WhatsApp
+Request Consultation Via WhatsApp
 </button>
 
 </form>
@@ -1019,65 +832,17 @@ Request Consultation via WhatsApp
 
 </section>
 
-<!-- CTA -->
-
-<section class="cta">
-
-<div class="container">
-
-<h2>Need Trusted Legal Assistance?</h2>
-
-<p>
-Contact Shalini Regent Legal Chambers today for professional legal consultation.
-</p>
-
-<a href="#contact" class="btn btn-primary">
-Book Consultation
-</a>
-
-</div>
-
-</section>
-
 <!-- FOOTER -->
 
 <footer>
 
-<div class="container">
-
-<div class="footer-top">
-
-<div class="footer-brand">
-
-<div class="logo-icon">⚖</div>
-
-<div>
-<h3>Shalini Regent Legal Chambers</h3>
-<p>Legal Excellence, Client Trust</p>
-</div>
-
-</div>
-
-<div class="footer-right">
-
-<p>© 2026 Shalini Regent Legal Chambers. All rights reserved.</p>
-
-<p>Bhopal, Madhya Pradesh</p>
-
-</div>
-
-</div>
-
-<div class="disclaimer">
-
-Disclaimer: The information provided on this website is for general informational purposes only
-and does not constitute legal advice.
-
-</div>
-
-</div>
+<p>
+© 2026 Shalini Regent Legal Chambers. All rights reserved.
+</p>
 
 </footer>
+
+<!-- JAVASCRIPT -->
 
 <script>
 
@@ -1090,24 +855,32 @@ let phone = document.getElementById('phone').value;
 let matter = document.getElementById('matter').value;
 let description = document.getElementById('description').value;
 
+if(phone.trim() === ""){
+    alert("Phone number is mandatory.");
+    return;
+}
+
 let message =
 `Hello, I would like to schedule a consultation.
 
 Name: ${name}
+
 Phone: ${phone}
-Matter: ${matter}
+
+Legal Matter: ${matter}
 
 Description:
 ${description}`;
 
-let url =
+let whatsappURL =
 `https://wa.me/919238774639?text=${encodeURIComponent(message)}`;
 
-window.open(url, '_blank');
+window.open(whatsappURL, '_blank');
 
 });
 
 </script>
 
 </body>
+
 </html>
