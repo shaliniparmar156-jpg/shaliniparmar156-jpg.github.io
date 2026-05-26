@@ -10,6 +10,8 @@ body{
   color:#222;
 }
 
+/* HERO SECTION */
+
 header{
   height:100vh;
   background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
@@ -17,26 +19,29 @@ header{
 }
 
 .overlay{
-  background:rgba(0,0,0,0.6);
+  background:rgba(0,0,0,0.65);
   height:100%;
   display:flex;
   flex-direction:column;
   justify-content:center;
-  align-items:center;
-  text-align:center;
+  align-items:flex-start;
+  text-align:left;
   color:white;
-  padding:20px;
+  padding:60px;
 }
 
 .overlay h1{
-  font-size:48px;
-  margin-bottom:18px;
-  line-height:1.3;
+  font-size:72px;
+  line-height:1.1;
+  margin-bottom:25px;
+  max-width:850px;
 }
 
 .overlay p{
-  font-size:18px;
-  margin-bottom:28px;
+  font-size:22px;
+  line-height:1.8;
+  max-width:850px;
+  margin-bottom:35px;
 }
 
 .overlay a{
@@ -49,22 +54,27 @@ header{
   transition:0.3s;
 }
 
+.overlay a:hover{
+  opacity:0.9;
+}
+
+/* SERVICES */
+
 .services{
-  padding:70px 20px;
+  padding:50px 20px;
   text-align:center;
   background:white;
 }
 
 .services h2{
   font-size:36px;
-  margin-bottom:35px;
+  margin-bottom:20px;
 }
 
 .service-box{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:18px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:12px;
   max-width:1200px;
   margin:auto;
 }
@@ -72,9 +82,8 @@ header{
 .card{
   background:#08142c;
   color:white;
-  width:260px;
   min-height:120px;
-  padding:28px;
+  padding:22px;
   border-radius:12px;
   font-size:17px;
   line-height:1.5;
@@ -83,6 +92,8 @@ header{
   justify-content:center;
   text-align:center;
 }
+
+/* ABOUT */
 
 .about{
   padding:70px 20px;
@@ -100,6 +111,8 @@ header{
   font-size:18px;
   line-height:1.8;
 }
+
+/* CONTACT */
 
 .contact{
   background:#08142c;
@@ -128,6 +141,8 @@ header{
   font-weight:bold;
 }
 
+/* FOOTER */
+
 footer{
   text-align:center;
   padding:20px;
@@ -136,14 +151,28 @@ footer{
   font-size:15px;
 }
 
+/* MOBILE */
+
 @media(max-width:768px){
 
+  header{
+    height:auto;
+    min-height:100vh;
+  }
+
+  .overlay{
+    padding:40px 25px;
+    align-items:flex-start;
+  }
+
   .overlay h1{
-    font-size:34px;
+    font-size:48px;
+    line-height:1.15;
   }
 
   .overlay p{
-    font-size:17px;
+    font-size:18px;
+    line-height:1.7;
   }
 
   .services h2,
@@ -152,8 +181,11 @@ footer{
     font-size:30px;
   }
 
+  .service-box{
+    grid-template-columns:1fr;
+  }
+
   .card{
-    width:100%;
     min-height:auto;
   }
 
