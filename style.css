@@ -1,161 +1,46 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+/* ===============================
+   ADVOCATE PHOTO PROTECTION
+   =============================== */
+
+/* Disable selection, drag, save */
+.protected-image{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+
+  -webkit-user-drag:none;
+  -khtml-user-drag:none;
+  -moz-user-drag:none;
+  -o-user-drag:none;
+
+  pointer-events:none;
+  -webkit-touch-callout:none;
 }
-body{
-  font-family:Arial, sans-serif;
-  background:#f4f4f4;
-  color:#222;
-}
-/* HERO SECTION */
-header{
-  height:100vh;
-  background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=1400&auto=format&fit=crop') center/cover no-repeat;
+
+/* Watermark wrapper (optional but recommended) */
+.image-watermark{
   position:relative;
-}
-.overlay{
-  background:rgba(0,0,0,0.65);
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:flex-start;
-  text-align:left;
-  color:white;
-  padding:60px;
-}
-.overlay h1{
-  font-size:72px;
-  line-height:1.1;
-  margin-bottom:25px;
-  max-width:850px;
-}
-.overlay p{
-  font-size:22px;
-  line-height:1.8;
-  max-width:850px;
-  margin-bottom:35px;
-}
-.overlay a{
-  background:#d4af37;
-  color:black;
-  padding:14px 28px;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
-  transition:0.3s;
-}
-.overlay a:hover{
-  opacity:0.9;
-}
-/* SERVICES */
-.services{
-  padding:50px 20px;
-  text-align:center;
-  background:white;
-}
-.services h2{
-  font-size:36px;
-  margin-bottom:20px;
-}
-.service-box{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:12px;
-  max-width:1200px;
-  margin:auto;
-}
-.card{
-  background:#08142c;
-  color:white;
-  min-height:120px;
-  padding:22px;
-  border-radius:12px;
-  font-size:17px;
-  line-height:1.5;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-}
-/* ABOUT */
-.about{
-  padding:70px 20px;
-  text-align:center;
-}
-.about h2{
-  font-size:36px;
-  margin-bottom:25px;
-}
-.about p{
-  max-width:900px;
-  margin:auto;
-  font-size:18px;
-  line-height:1.8;
-}
-/* CONTACT */
-.contact{
-  background:#08142c;
-  color:white;
-  text-align:center;
-  padding:70px 20px;
-}
-.contact h2{
-  font-size:36px;
-  margin-bottom:20px;
-}
-.contact p{
-  font-size:18px;
-}
-.contact a{
   display:inline-block;
-  margin-top:30px;
-  background:#d4af37;
-  color:black;
-  padding:14px 28px;
-  text-decoration:none;
-  border-radius:8px;
-  font-weight:bold;
 }
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:20px;
-  background:black;
-  color:white;
-  font-size:15px;
+
+.image-watermark::after{
+  content:"© Shalini Regent Legal Chambers";
+  position:absolute;
+  bottom:15px;
+  right:15px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  font-size:14px;
+  padding:6px 12px;
+  border-radius:6px;
+  pointer-events:none;
 }
-/* MOBILE */
-@media(max-width:768px){
-  header{
-    height:auto;
-    min-height:100vh;
-  }
-  .overlay{
-    padding:40px 25px;
-    align-items:flex-start;
-  }
-  .overlay h1{
-    font-size:48px;
-    line-height:1.15;
-  }
-  .overlay p{
-    font-size:18px;
-    line-height:1.7;
-  }
-  .services h2,
-  .about h2,
-  .contact h2{
-    font-size:30px;
-  }
-  .service-box{
-    grid-template-columns:1fr;
-  }
-  .card{
-    min-height:auto;
-  }
-  .about p{
-    font-size:17px;
-  }
+
+/* Disable text selection globally (optional – strong protection) */
+body{
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
