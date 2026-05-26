@@ -31,6 +31,7 @@ scroll-behavior:smooth;
 
 body{
 font-family:'Inter',sans-serif;
+font-size:15px;
 color:var(--text);
 background:#fff;
 line-height:1.7;
@@ -189,7 +190,7 @@ color:#fff;
 text-align:center;
 max-width:850px;
 margin:auto;
-margin-bottom:70px;
+margin-bottom:45px;
 }
 
 .section-header h2{
@@ -198,7 +199,7 @@ margin-bottom:20px;
 }
 
 .section-header p{
-font-size:20px;
+font-size:18px;
 color:#475569;
 }
 
@@ -312,7 +313,7 @@ margin-bottom:20px;
 
 .advocate-content p{
 margin-bottom:20px;
-font-size:18px;
+font-size:17px;
 }
 
 .quote-box{
@@ -330,6 +331,10 @@ margin-top:15px;
 
 .advocate-image img{
 width:100%;
+pointer-events:none;
+user-select:none;
+-webkit-user-drag:none;
+-webkit-touch-callout:none;
 height:650px;
 object-fit:cover;
 border-radius:24px;
@@ -799,9 +804,9 @@ dedication, and commitment to the best possible outcomes.
 </div>
 
 <div class="service-card">
-<div class="service-icon">👥</div>
-<h3>Mediation Support</h3>
-<p>Alternative dispute resolution and mediation guidance.</p>
+<div class="service-icon">🏢</div>
+<h3>RERA Matters</h3>
+<p>Legal assistance in real estate disputes, builder-buyer matters, RERA complaints, compliance and representation before RERA authorities.</p>
 </div>
 
 </div>
@@ -834,22 +839,11 @@ providing clarity in complex situations, and guiding clients with integrity and 
 </div>
 
 <div class="advocate-image">
-<img src="images/Advocate.jpg" alt="Advocate Shalini Singh Parmar">
+<img src="images/Advocate.jpg" alt="Advocate Shalini Singh Parmar" draggable="false" oncontextmenu="return false;" onmousedown="return false;" ondra gstart="return false;" onselectstart="return false;">
 </div>
 
 </div>
 
-<div class="expertise-panel">
-<h3>Areas of Expertise</h3>
-<div class="expertise-grid">
-<div class="expertise-item">Legal Research</div>
-<div class="expertise-item">Dispute Resolution</div>
-<div class="expertise-item">Litigation</div>
-<div class="expertise-item">Legal Writing</div>
-<div class="expertise-item">Legal Advice</div>
-<div class="expertise-item">Contracts</div>
-</div>
-</div>
 
 </div>
 </section>
@@ -882,6 +876,18 @@ providing clarity in complex situations, and guiding clients with integrity and 
 <li>Property Transfer</li>
 <li>Partition Matters</li>
 <li>Land Acquisition</li>
+</ul>
+</div>
+
+
+<div class="practice-card">
+<h3>RERA Matters</h3>
+<ul>
+<li>Builder-Buyer Disputes</li>
+<li>RERA Complaints & Appeals</li>
+<li>Delayed Possession Claims</li>
+<li>Refund & Compensation Matters</li>
+<li>Real Estate Project Compliance</li>
 </ul>
 </div>
 
@@ -1143,6 +1149,9 @@ window.open(url, '_blank');
 
 });
 
+
+document.addEventListener('contextmenu',e=>{if(e.target.tagName==='IMG')e.preventDefault();});
+document.addEventListener('dragstart',e=>{if(e.target.tagName==='IMG')e.preventDefault();});
 </script>
 
 </body>
