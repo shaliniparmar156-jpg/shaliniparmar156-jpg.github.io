@@ -23,6 +23,33 @@ scroll-behavior:smooth;
 --white:#ffffff;
 --border:#e5e7eb;
 }
+<script>
+/* Disable right-click */
+document.addEventListener('contextmenu', function(e){
+  e.preventDefault();
+});
+
+/* Disable common screenshot shortcuts */
+document.addEventListener('keydown', function(e){
+  if(
+    e.key === 'PrintScreen' ||
+    (e.ctrlKey && e.key === 's') ||
+    (e.ctrlKey && e.key === 'u') ||
+    (e.ctrlKey && e.shiftKey && e.key === 'i')
+  ){
+    e.preventDefault();
+    alert('Action disabled for content protection.');
+  }
+});
+
+/* Clear clipboard after Print Screen */
+document.addEventListener('keyup', function(e){
+  if(e.key === 'PrintScreen'){
+    navigator.clipboard.writeText('');
+    alert('Screenshots are disabled.');
+  }
+});
+</script>     
 body{
 font-family:'Inter',sans-serif;
 color:var(--text);
@@ -690,10 +717,11 @@ providing clarity in complex situations, and guiding clients with integrity and 
 </div>
 </div>
 <div class="advocate-image">
-<img src="images/Advocate.jpg"
-     alt="Advocate Shalini Singh Parmar"
-     class="protected-image"
-     draggable="false">
+<img src="images/Advocate.jpg" alt="Advocate Shalini Singh Parmar" class="protected-image" draggable="false">
+</div>
+<div class="image-watermark">
+  <img src="images/Advocate.jpg" class="protected-image" alt="Advocate Shalini Singh Parmar">
+  <span>© Shalini Regent Legal Chambers</span>
 </div>
 </div>
 <section class="practice-area" id="practice">
